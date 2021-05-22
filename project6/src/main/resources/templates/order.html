@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="BIG5">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="2" color="black">
+	<tr>
+	<td>airline</td>
+	<td>days</td>
+	<td>numberppl</td>
+	<td>money</td>
+	<td>username</td>
+	<td>total</td>
+	</tr>
+	
+	<tr th:each="listing : ${sorting}">
+	<td th:text="${listing.airline}"></td>
+	<td th:text="${listing.days}"></td>
+	<td th:text="${listing.numberppl}"> </td>
+	<td th:text="${listing.money}"></td>
+	<td th:text="${listing.username}"></td>
+	<td th:text="${listing.total}"></td>
+	</tr>
+	
+	
+	
+	</table>
+</body>
+</html>

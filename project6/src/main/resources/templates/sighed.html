@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="BIG5">
+<title>Insert title here</title>
+</head>
+<body>
+		<h2>account info</h2>
+		
+		<div th:each="list :${account}">
+		username=<span th:text="${list.username}"></span><br>
+		birthday=<span th:text="${list.birthday}"></span><br>
+		address=<span th:text="${list.address}"></span><br>
+		email=<span th:text="${list.email}"></span><br>
+		phone=<span th:text="${list.phone}"></span><br>
+		
+		</div>
+		<a th:href="@{/index}"> view packege</a>
+		
+		
+		
+
+</body>
+</html>
